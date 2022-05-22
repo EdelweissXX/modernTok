@@ -1,7 +1,12 @@
 import { combineReducers } from "redux";
 import employee from "./employee";
 
-const reducers = employee ;
+const reducers = combineReducers(
+    {
+        fist:employee
+    }
+)
 
-export default combineReducers(reducers);
+
+export default reducers;
 

@@ -1,12 +1,11 @@
 
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
+import HeaderTop from '../src/Compoents/index/Header'
 
-import {Button, Divider} from "antd";
 export default function Home() {
   return (
-    <div className={styles.container}>
-        <Button>Hello</Button>
-        <Divider />
-    </div>
+      <nav>
+       <HeaderTop></HeaderTop>
+      </nav>
   )
 }

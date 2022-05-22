@@ -1,7 +1,7 @@
 
-
-export default function indexGetUser<T extends (state:unknown,action:{type:any,data:any})=>any>(state:unknown, action:{type:any,data:any}) {
+export default function indexGetUser<T extends (state:unknown,action:{type:any,data:any})=>any>(state={}, action:{type:any,data:any}) {
     const {type} = action
+
     switch (type) {
         case type.START_FETCH:
             return {...state as {}, isFetching: true};
