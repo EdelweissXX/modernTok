@@ -11,6 +11,13 @@
       "es2021.intl",
       "ESNext"
     ],
+
+    "baseUrl": ".",
+
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -25,7 +32,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
   },
   "include": [
     "next-env.d.ts",
