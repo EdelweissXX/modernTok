@@ -5,6 +5,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+//1rem=10px
 html{
   font-size: 0.657894737vw;
 }
@@ -17,28 +18,60 @@ a {
   box-sizing: border-box;
 }
 
-@media all  and (max-width:1280px){
+@media all  and (max-width:1280px)and (min-width: 1024px){
 html{
   font-size: 1/(1280/100)*10vw;
 };
 }
 
-@media all  and (max-width:1024px){
+@media all  and (max-width:1024px)and (min-width: 800px){
   html{
     font-size: 1/(1024/100)*10vw;
   };
 }
-@media all  and (max-width:800px){
+@media all  and (max-width:800px) and (min-width: 600px){
   html{
     font-size:1/(800/100)*10vw;
   };
 }
-@media all  and (max-width:600px){
+@media all  and (max-width:600px) and (min-width: 500px){
   html{
-    font-size:1/(600/100)*9vw;
+    font-size:1/(600/100)*8vw;
   };
-}@media all  and (max-width:375px){
+}
+@media all  and (max-width:500px) and (min-width: 400px){
   html{
-    font-size:1/(375/100)*8vw;
+    font-size:1/(500/100)*8vw;
+  };
+}
+
+
+@media all  and (max-width:400px) and (min-width: 375px){
+  html{
+    font-size:1/(400/100)*6vw;
+  };
+}
+@media all  and (max-width:375px) and (min-width: 350px){
+  html{
+    font-size:1/(375/100)*6.5vw;
+  };
+}
+@media all  and (max-width:350px) and (min-width: 325px){
+  html{
+    font-size:1/(350/100)*6vw;
+  };
+}
+@media all  and (max-width:325px) and (min-width: 300px){
+  html{
+    font-size:1/(325/100)*5vw;
+  };
+}
+@media all  and (max-width:300px) and (min-width: 275px){
+  html{
+    font-size:1/(300/100)*5vw;
+  };
+}@media all  and (max-width:275px) and (min-width: 250px){
+  html{
+    font-size:1/(275/100)*7vw;
   };
 }

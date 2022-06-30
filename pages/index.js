@@ -1,13 +1,15 @@
 
-import styles from '../styles/Home.module.scss'
 import HeaderTop from '../src/Compoents/index/Header'
-import Head from "next/head";
+import HeadPublic from '../src/Compoents/HeadPulic';
 
 export default function Home() {
   return (
+      <div>
+      <HeadPublic title={'TikTok:記錄人生的精彩瞬間'}/>
       <nav>
        <HeaderTop></HeaderTop>
       </nav>
+      </div>
   )
 }
 
