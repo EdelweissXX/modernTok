@@ -4,8 +4,9 @@ import {AppProps} from 'next/app'
 import {Provider} from "react-redux";
 import store from '../src/redux/index'
 import {useEffect, useState} from "react";
-import Head from "next/head";
 
+import HeaderTop from '../src/Compoents/index/Header'
+import HeadPublic from '../src/Compoents/HeadPulic';
 function MyApp({Component, pageProps,router}: AppProps) {
 
     const [showChild, setShowChild] = useState(false);
@@ -26,12 +27,10 @@ function MyApp({Component, pageProps,router}: AppProps) {
 
         return (
             <div>
-                <Head>
-                    <title>{'Index'}</title>
-                    <meta name="description" content={""}/>
-                </Head>
-                <Provider store={store}>
+                <HeadPublic title={'TikTok:記錄人生的精彩瞬間'}/>
 
+                <Provider store={store}>
+                    <HeaderTop></HeaderTop>
                     <Component {...pageProps} />
                 </Provider>
             </div>
